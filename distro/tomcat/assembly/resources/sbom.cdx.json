@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:cbf52ec2-77b5-45a5-b23b-66ce564fdd0b",
+  "serialNumber": "urn:uuid:93d68252-5a75-4376-819a-0060c5de221a",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-12-31T05:42:50Z",
+    "timestamp": "2026-01-06T10:08:25Z",
     "tools": {
       "components": [
         {
@@ -21147,7 +21147,7 @@
     },
     {
       "type": "application",
-      "bom-ref": "2aef158c-fceb-422b-b0a6-90da7367ddd3",
+      "bom-ref": "e4ec01f9-bb9f-42ef-aa86-c3a233a766ac",
       "name": "package-lock.json",
       "properties": [
         {
@@ -24793,7 +24793,7 @@
     },
     {
       "type": "application",
-      "bom-ref": "660f083e-738a-4d35-8458-565c3b074b2e",
+      "bom-ref": "9ba86f4a-d758-464b-b45e-5c90c95412d6",
       "name": "/repo/webapps/frontend",
       "properties": [
         {
@@ -27389,7 +27389,13 @@
       "dependsOn": []
     },
     {
-      "ref": "2aef158c-fceb-422b-b0a6-90da7367ddd3",
+      "ref": "9ba86f4a-d758-464b-b45e-5c90c95412d6",
+      "dependsOn": [
+        "e4ec01f9-bb9f-42ef-aa86-c3a233a766ac"
+      ]
+    },
+    {
+      "ref": "e4ec01f9-bb9f-42ef-aa86-c3a233a766ac",
       "dependsOn": [
         "pkg:npm/%40bpmn-io/dmn-migrate@0.6.0",
         "pkg:npm/%40bpmn-io/form-js@1.8.7",
@@ -27434,12 +27440,6 @@
         "pkg:npm/requirejs-angular-define@1.1.0",
         "pkg:npm/requirejs@2.3.8",
         "pkg:npm/superagent@10.2.3"
-      ]
-    },
-    {
-      "ref": "660f083e-738a-4d35-8458-565c3b074b2e",
-      "dependsOn": [
-        "2aef158c-fceb-422b-b0a6-90da7367ddd3"
       ]
     },
     {
@@ -29844,6 +29844,15 @@
           "severity": "high",
           "method": "CVSSv31",
           "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
         }
       ],
       "cwes": [
@@ -29856,6 +29865,9 @@
           "url": "https://avd.aquasec.com/nvd/cve-2025-15284"
         },
         {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-15284"
+        },
+        {
           "url": "https://github.com/ljharb/qs"
         },
         {
@@ -29866,10 +29878,13 @@
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-15284"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-15284"
         }
       ],
       "published": "2025-12-29T23:15:42Z",
-      "updated": "2025-12-29T23:15:42Z",
+      "updated": "2025-12-31T20:43:25Z",
       "affects": [
         {
           "ref": "pkg:npm/qs@6.13.0",
