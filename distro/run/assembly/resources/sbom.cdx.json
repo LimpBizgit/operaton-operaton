@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:455d27b9-0eae-4872-847e-21dc56b7366b",
+  "serialNumber": "urn:uuid:a08ef1ee-b188-4ed1-b08e-d5aec0baf396",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-01-30T11:32:46Z",
+    "timestamp": "2026-01-30T11:48:25Z",
     "tools": {
       "components": [
         {
@@ -23193,7 +23193,7 @@
     },
     {
       "type": "application",
-      "bom-ref": "9cf22fb0-b8ae-4955-8f10-c1f89dc58392",
+      "bom-ref": "78529920-7892-4a0f-a7a3-dbf73a47c7f3",
       "name": "package-lock.json",
       "properties": [
         {
@@ -28419,7 +28419,7 @@
     },
     {
       "type": "application",
-      "bom-ref": "56174e5d-442b-4ca9-a4d3-02282c5d00a1",
+      "bom-ref": "1a9a1071-d1fc-4e6b-a491-989cfeb769e1",
       "name": "/repo/webapps/frontend",
       "properties": [
         {
@@ -31245,13 +31245,13 @@
       "dependsOn": []
     },
     {
-      "ref": "56174e5d-442b-4ca9-a4d3-02282c5d00a1",
+      "ref": "1a9a1071-d1fc-4e6b-a491-989cfeb769e1",
       "dependsOn": [
-        "9cf22fb0-b8ae-4955-8f10-c1f89dc58392"
+        "78529920-7892-4a0f-a7a3-dbf73a47c7f3"
       ]
     },
     {
-      "ref": "9cf22fb0-b8ae-4955-8f10-c1f89dc58392",
+      "ref": "78529920-7892-4a0f-a7a3-dbf73a47c7f3",
       "dependsOn": [
         "pkg:npm/%40bpmn-io/dmn-migrate@0.7.0",
         "pkg:npm/%40bpmn-io/form-js@1.18.0",
