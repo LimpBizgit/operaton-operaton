@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:a0125778-70a8-4f4e-b1d8-6aa4ec811e1e",
+  "serialNumber": "urn:uuid:4db467b7-b12a-4cea-a7fb-f08fc688972e",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-03-02T00:25:44Z",
+    "timestamp": "2026-03-09T07:02:43Z",
     "tools": {
       "components": [
         {
@@ -56,7 +56,7 @@
           },
           "group": "aquasecurity",
           "name": "trivy",
-          "version": "0.69.2"
+          "version": "0.69.3"
         }
       ]
     },
@@ -3359,45 +3359,45 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:maven/joda-time/joda-time@2.14.0?type=jar",
+      "bom-ref": "pkg:maven/joda-time/joda-time@2.14.1?type=jar",
       "publisher": "Joda.org",
       "group": "joda-time",
       "name": "joda-time",
-      "version": "2.14.0",
+      "version": "2.14.1",
       "description": "Date and time library to replace JDK date handling",
       "scope": "required",
       "hashes": [
         {
           "alg": "MD5",
-          "content": "ce5d368699f16abb55616b6b9fcb34dd"
+          "content": "b154da334a98d24b8cd9be7f3c4d08db"
         },
         {
           "alg": "SHA-1",
-          "content": "1fa665c1ce64a2c8c94f63fc5c1ee7bd742d2022"
+          "content": "07fdf3ed3539cffeab283e6dae1d10657b6913a5"
         },
         {
           "alg": "SHA-256",
-          "content": "1e2da6f9eb65f20a25d9a3186831ed2b3fb14f7a48e1ef8206135ee58cb143d3"
+          "content": "656721d9456d5ec7e7bfcf02665202ea5a375ff22136b8f23473cf7eae8fa0c6"
         },
         {
           "alg": "SHA-512",
-          "content": "af0a707cb15a273d0169908d518b0bebc5f79aa07a442d9a77b117feaab2916b3729862642d2b465a3ec569540304a622758aac566c0af84123f151d4ebf1f5a"
+          "content": "1bebb16bc821e77db13fa59dd943e403e7a5ed9a1686f6e8af2f82b67ee419c681d5459e99015a0f1ef7c300998c193c1602174f1c91ca8b462095b67edbef54"
         },
         {
           "alg": "SHA-384",
-          "content": "2aba3754964f4d470bf3f7188aebc7ddda98f8981f46c5989f1bc3007ceed3a5ce008f5b50450d11e67b1c7bb4eba5b2"
+          "content": "8826987854e296f732d47e0c3f5c6df33d48d8b5314ae29aea1f856b94dee6a81ae902bf3538e5f049b78c4390178f61"
         },
         {
           "alg": "SHA3-384",
-          "content": "c9f59bda7a238f67401d525d0be6db455d4539bcb5d793319d4161c9aded59cd9851bf03977eb21d13b9a120805b9966"
+          "content": "705f0e0b606c4d4679e60cdea00d809b29c1d37b616a4e77d3a1c58e4b0e2a3d307fd1c64c11a9f03d43cc14774e124e"
         },
         {
           "alg": "SHA3-256",
-          "content": "cc6863e7c8b47dda46731053f8df85387dd961b4f690c6212a910d6e07962324"
+          "content": "4b97618f0d54dc9eaaafe8d25c39a392b609d090749c171bf5a9f1efe4ba562a"
         },
         {
           "alg": "SHA3-512",
-          "content": "59bea4e54b6a967f35a22b26584db889aa5f23a649270ac0cd7af4b713ebe9e68a55d92c27cc64a196ba76bd493eacb280d8bfe7951a32fd3a3cfce534eba8aa"
+          "content": "084f15561666ccfcaf8acdf12baf680c4257ab18190328aab41f96cb0d97595fa034e0ce195cb8e3bcc887058c78d9a364e4c44a52475f6946d2c43df5e9a3de"
         }
       ],
       "licenses": [
@@ -3407,19 +3407,11 @@
           }
         }
       ],
-      "purl": "pkg:maven/joda-time/joda-time@2.14.0?type=jar",
+      "purl": "pkg:maven/joda-time/joda-time@2.14.1?type=jar",
       "externalReferences": [
         {
           "url": "https://www.joda.org/joda-time/",
           "type": "website"
-        },
-        {
-          "url": "https://oss.sonatype.org/content/repositories/joda-releases",
-          "type": "distribution"
-        },
-        {
-          "url": "https://oss.sonatype.org/service/local/staging/deploy/maven2/",
-          "type": "distribution-intake"
         },
         {
           "url": "https://github.com/JodaOrg/joda-time/issues/",
@@ -21352,7 +21344,7 @@
     },
     {
       "type": "application",
-      "bom-ref": "ac84d88c-68cd-4a46-a3a5-01709afeea27",
+      "bom-ref": "87e96eea-6882-402b-8130-640af4ce1a5d",
       "name": "package-lock.json",
       "properties": [
         {
@@ -22873,9 +22865,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:npm/bpmn-js@18.12.0",
+      "bom-ref": "pkg:npm/bpmn-js@18.12.1",
       "name": "bpmn-js",
-      "version": "18.12.0",
+      "version": "18.12.1",
       "licenses": [
         {
           "license": {
@@ -22883,11 +22875,11 @@
           }
         }
       ],
-      "purl": "pkg:npm/bpmn-js@18.12.0",
+      "purl": "pkg:npm/bpmn-js@18.12.1",
       "properties": [
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "bpmn-js@18.12.0"
+          "value": "bpmn-js@18.12.1"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -24266,9 +24258,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:npm/fast-xml-parser@5.3.8",
-      "name": "fast-xml-parser",
-      "version": "5.3.8",
+      "bom-ref": "pkg:npm/fast-xml-builder@1.0.0",
+      "name": "fast-xml-builder",
+      "version": "1.0.0",
       "licenses": [
         {
           "license": {
@@ -24276,11 +24268,35 @@
           }
         }
       ],
-      "purl": "pkg:npm/fast-xml-parser@5.3.8",
+      "purl": "pkg:npm/fast-xml-builder@1.0.0",
       "properties": [
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "fast-xml-parser@5.3.8"
+          "value": "fast-xml-builder@1.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/fast-xml-parser@5.4.2",
+      "name": "fast-xml-parser",
+      "version": "5.4.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/fast-xml-parser@5.4.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "fast-xml-parser@5.4.2"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -26290,7 +26306,7 @@
     },
     {
       "type": "application",
-      "bom-ref": "cd32a201-c701-4d06-a10c-dd391d6cae22",
+      "bom-ref": "2388f6a0-a725-4d06-996e-5d1585d165ae",
       "name": "/repo/webapps/frontend",
       "properties": [
         {
@@ -26760,7 +26776,7 @@
         "pkg:maven/org.operaton.commons/operaton-commons-typed-values@2.0.0-SNAPSHOT?type=jar",
         "pkg:maven/org.mybatis/mybatis@3.5.19?type=jar",
         "pkg:maven/org.springframework/spring-beans@7.0.5?type=jar",
-        "pkg:maven/joda-time/joda-time@2.14.0?type=jar",
+        "pkg:maven/joda-time/joda-time@2.14.1?type=jar",
         "pkg:maven/com.google.code.gson/gson@2.13.2?type=jar",
         "pkg:maven/org.junit.jupiter/junit-jupiter@6.0.3?type=jar",
         "pkg:maven/org.junit.jupiter/junit-jupiter-api@6.0.3?type=jar",
@@ -26804,7 +26820,7 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:maven/joda-time/joda-time@2.14.0?type=jar",
+      "ref": "pkg:maven/joda-time/joda-time@2.14.1?type=jar",
       "dependsOn": []
     },
     {
@@ -27697,7 +27713,7 @@
         "pkg:maven/org.operaton.commons/operaton-commons-typed-values@2.0.0-SNAPSHOT?type=jar",
         "pkg:maven/org.mybatis/mybatis@3.5.19?type=jar",
         "pkg:maven/org.springframework/spring-beans@7.0.5?type=jar",
-        "pkg:maven/joda-time/joda-time@2.14.0?type=jar",
+        "pkg:maven/joda-time/joda-time@2.14.1?type=jar",
         "pkg:maven/com.google.code.gson/gson@2.13.2?type=jar",
         "pkg:maven/com.cronutils/cron-utils@9.2.1?type=jar"
       ]
@@ -28419,7 +28435,7 @@
         "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.21?type=jar",
         "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.1?type=jar",
         "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.1?type=jar",
-        "pkg:maven/joda-time/joda-time@2.14.0?type=jar"
+        "pkg:maven/joda-time/joda-time@2.14.1?type=jar"
       ]
     },
     {
@@ -28544,7 +28560,7 @@
         "pkg:maven/org.operaton.commons/operaton-commons-typed-values@2.0.0-SNAPSHOT?type=jar",
         "pkg:maven/org.mybatis/mybatis@3.5.19?type=jar",
         "pkg:maven/org.springframework/spring-beans@7.0.5?type=jar",
-        "pkg:maven/joda-time/joda-time@2.14.0?type=jar",
+        "pkg:maven/joda-time/joda-time@2.14.1?type=jar",
         "pkg:maven/com.google.code.gson/gson@2.13.2?type=jar",
         "pkg:maven/com.cronutils/cron-utils@9.2.1?type=jar"
       ]
@@ -28950,7 +28966,13 @@
       "dependsOn": []
     },
     {
-      "ref": "ac84d88c-68cd-4a46-a3a5-01709afeea27",
+      "ref": "2388f6a0-a725-4d06-996e-5d1585d165ae",
+      "dependsOn": [
+        "87e96eea-6882-402b-8130-640af4ce1a5d"
+      ]
+    },
+    {
+      "ref": "87e96eea-6882-402b-8130-640af4ce1a5d",
       "dependsOn": [
         "pkg:npm/%40bpmn-io/dmn-migrate@0.7.1",
         "pkg:npm/%40bpmn-io/form-js@1.19.0",
@@ -28970,7 +28992,7 @@
         "pkg:npm/bootstrap-icons@1.13.1",
         "pkg:npm/bootstrap@4.6.2",
         "pkg:npm/bpmn-font@0.12.1",
-        "pkg:npm/bpmn-js@18.12.0",
+        "pkg:npm/bpmn-js@18.12.1",
         "pkg:npm/camunda-dmn-js@3.7.0",
         "pkg:npm/chart.js@4.5.1",
         "pkg:npm/clipboard@2.0.11",
@@ -28986,7 +29008,7 @@
         "pkg:npm/dom4@2.1.6",
         "pkg:npm/dompurify@3.3.1",
         "pkg:npm/events@3.3.0",
-        "pkg:npm/fast-xml-parser@5.3.8",
+        "pkg:npm/fast-xml-parser@5.4.2",
         "pkg:npm/jquery-ui@1.14.2",
         "pkg:npm/jquery@3.7.1",
         "pkg:npm/lodash@4.17.23",
@@ -28997,12 +29019,6 @@
         "pkg:npm/requirejs-angular-define@1.1.0",
         "pkg:npm/requirejs@2.3.8",
         "pkg:npm/superagent@10.3.0"
-      ]
-    },
-    {
-      "ref": "cd32a201-c701-4d06-a10c-dd391d6cae22",
-      "dependsOn": [
-        "ac84d88c-68cd-4a46-a3a5-01709afeea27"
       ]
     },
     {
@@ -29412,7 +29428,7 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:npm/bpmn-js@18.12.0",
+      "ref": "pkg:npm/bpmn-js@18.12.1",
       "dependsOn": [
         "pkg:npm/bpmn-moddle@10.0.0",
         "pkg:npm/diagram-js-direct-editing@3.3.0",
@@ -29837,8 +29853,13 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:npm/fast-xml-parser@5.3.8",
+      "ref": "pkg:npm/fast-xml-builder@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/fast-xml-parser@5.4.2",
       "dependsOn": [
+        "pkg:npm/fast-xml-builder@1.0.0",
         "pkg:npm/strnum@2.1.2"
       ]
     },
@@ -31368,6 +31389,77 @@
           "versions": [
             {
               "version": "1.8.3",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-0540",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed\u002Becosystem%3Anpm"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 6.1,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 6.1,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes": [
+        79
+      ],
+      "description": "DOMPurify 3.1.3 through 3.3.1 and 2.5.3 through 2.5.8, fixed in commit 729097f, contain a cross-site scripting vulnerability that allows attackers to bypass attribute sanitization by exploiting five missing rawtext elements (noscript, xmp, noembed, noframes, iframe) in the SAFE_FOR_XML regex. Attackers can include payloads like \u003C/noscript\u003E\u003Cimg src=x onerror=alert(1)\u003E in attribute values to execute JavaScript when sanitized output is placed inside these unprotected rawtext contexts.",
+      "recommendation": "Upgrade dompurify to version 3.3.2, 2.5.9",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-0540"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-0540"
+        },
+        {
+          "url": "https://github.com/cure53/DOMPurify"
+        },
+        {
+          "url": "https://github.com/cure53/DOMPurify/commit/fca0a938b4261ddc9c0293a289935a9029c049f5"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0540"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-0540"
+        },
+        {
+          "url": "https://www.vulncheck.com/advisories/dompurify-xss-via-missing-rawtext-elements-in-safe-for-xml"
+        },
+        {
+          "url": "https://www.vulncheck.com/advisories/dompurify-xss-via-missing-rawtext-elements-in-safeforxml"
+        }
+      ],
+      "published": "2026-03-03T18:16:24Z",
+      "updated": "2026-03-05T00:03:46Z",
+      "affects": [
+        {
+          "ref": "pkg:npm/dompurify@3.3.1",
+          "versions": [
+            {
+              "version": "3.3.1",
               "status": "affected"
             }
           ]
