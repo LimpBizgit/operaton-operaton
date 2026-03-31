@@ -37,6 +37,7 @@ import org.operaton.bpm.engine.impl.pvm.PvmScope;
  * @author Daniel Meyer
  */
 public class TimerDeclarationImpl extends JobDeclaration<ExecutionEntity, TimerEntity> {
+  private static final StartProcessVariableScope START_PROCESS_VARIABLE_SCOPE = new StartProcessVariableScope();
 
   protected Expression description;
   protected TimerDeclarationType type;
@@ -122,7 +123,7 @@ public class TimerDeclarationImpl extends JobDeclaration<ExecutionEntity, TimerE
     // evaluating variables but other context, evaluating should happen nevertheless
     VariableScope scopeForExpression = context;
     if (scopeForExpression == null) {
-      scopeForExpression = new StartProcessVariableScope();
+      scopeForExpression = START_PROCESS_VARIABLE_SCOPE;
     }
 
     Object dueDateValue = description.getValue(scopeForExpression);

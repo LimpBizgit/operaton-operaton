@@ -55,7 +55,6 @@ public class SimpleVariableInstance implements CoreVariableInstance {
   }
 
   public static class SimpleVariableInstanceFactory implements VariableInstanceFactory<SimpleVariableInstance> {
-
     @Override
     public SimpleVariableInstance build(String name, TypedValue value, boolean isTransient) {
       return new SimpleVariableInstance(name, value);

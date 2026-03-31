@@ -40,6 +40,7 @@ import org.operaton.bpm.engine.variable.value.TypedValue;
  *
  */
 public class FormFieldHandler {
+  private static final StartProcessVariableScope START_PROCESS_VARIABLE_SCOPE = new StartProcessVariableScope();
 
   protected String id;
   protected Expression label;
@@ -56,7 +57,7 @@ public class FormFieldHandler {
     formField.setId(id);
 
     // set label (evaluate expression)
-    VariableScope variableScope = executionEntity != null ? executionEntity : new StartProcessVariableScope();
+    VariableScope variableScope = executionEntity != null ? executionEntity : START_PROCESS_VARIABLE_SCOPE;
     if (label != null) {
       Object labelValueObject = label.getValue(variableScope);
       if (labelValueObject != null) {

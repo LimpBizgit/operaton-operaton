@@ -47,9 +47,9 @@ import org.operaton.bpm.model.cmmn.instance.CmmnElement;
 public class CaseExecutionImpl extends CmmnExecution implements Serializable {
 
   protected static final CmmnBehaviorLogger LOG = ProcessEngineLogger.CMNN_BEHAVIOR_LOGGER;
+  private static final VariableInstanceFactory<CoreVariableInstance> VARIABLE_INSTANCE_FACTORY = (VariableInstanceFactory) new SimpleVariableInstanceFactory();
 
-  @Serial
-  private static final long serialVersionUID = 1L;
+  @Serial private static final long serialVersionUID = 1L;
 
   // current position /////////////////////////////////////////////////////////
 
@@ -300,9 +300,8 @@ public class CaseExecutionImpl extends CmmnExecution implements Serializable {
   }
 
   @Override
-  @SuppressWarnings({ "unchecked", "rawtypes" })
   protected VariableInstanceFactory<CoreVariableInstance> getVariableInstanceFactory() {
-    return (VariableInstanceFactory) new SimpleVariableInstanceFactory();
+    return VARIABLE_INSTANCE_FACTORY;
   }
 
   @Override

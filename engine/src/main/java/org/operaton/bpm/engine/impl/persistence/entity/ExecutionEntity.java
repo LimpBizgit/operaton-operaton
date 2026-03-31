@@ -102,6 +102,7 @@ public class ExecutionEntity extends PvmExecutionImpl implements Execution, Proc
   private static final VariableInstanceEntityPersistenceListener VARIABLE_PERSISTENCE_LISTENER = new VariableInstanceEntityPersistenceListener();
   private static final VariableInstanceHistoryListener VARIABLE_INSTANCE_HISTORY_LISTENER = new VariableInstanceHistoryListener();
   private static final VariableInstanceSequenceCounterListener VARIABLE_INSTANCE_SEQUENCE_COUNTER_LISTENER = new VariableInstanceSequenceCounterListener();
+  private static final VariableInstanceFactory VARIABLE_INSTANCE_FACTORY = new VariableInstanceEntityFactory();
 
   // Persistent referenced entities state /////////////////////////////////////
   public static final int EVENT_SUBSCRIPTIONS_STATE_BIT = 1;
@@ -1720,9 +1721,8 @@ public class ExecutionEntity extends PvmExecutionImpl implements Execution, Proc
   }
 
   @Override
-  @SuppressWarnings({ "rawtypes", "unchecked" })
   protected VariableInstanceFactory<CoreVariableInstance> getVariableInstanceFactory() {
-    return (VariableInstanceFactory) new VariableInstanceEntityFactory();
+    return VARIABLE_INSTANCE_FACTORY;
   }
 
   @Override

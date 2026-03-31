@@ -40,6 +40,7 @@ import org.operaton.bpm.engine.impl.pvm.runtime.LegacyBehavior;
  * @author Danny Gräf
  */
 public class EventSubscriptionDeclaration {
+  private static final StartProcessVariableScope START_PROCESS_VARIABLE_SCOPE = new StartProcessVariableScope();
 
   private final EventType eventType;
   private final Expression eventName;
@@ -134,7 +135,7 @@ public class EventSubscriptionDeclaration {
   public EventSubscriptionEntity createSubscriptionForStartEvent(ProcessDefinitionEntity processDefinition) {
     EventSubscriptionEntity eventSubscriptionEntity = new EventSubscriptionEntity(eventType);
 
-    VariableScope scopeForExpression = new StartProcessVariableScope();
+    VariableScope scopeForExpression = START_PROCESS_VARIABLE_SCOPE;
     String event = resolveExpressionOfEventName(scopeForExpression);
     eventSubscriptionEntity.setEventName(event);
     eventSubscriptionEntity.setActivityId(activityId);

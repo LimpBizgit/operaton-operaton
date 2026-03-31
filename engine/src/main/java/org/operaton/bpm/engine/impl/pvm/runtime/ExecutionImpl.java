@@ -50,6 +50,7 @@ public class ExecutionImpl extends PvmExecutionImpl implements Serializable, Act
 
   @Serial
   private static final long serialVersionUID = 1L;
+  private static final VariableInstanceFactory VARIABLE_INSTANCE_FACTORY = new SimpleVariableInstanceFactory();
 
   private static final AtomicInteger idGenerator = new AtomicInteger();
 
@@ -307,9 +308,8 @@ public class ExecutionImpl extends PvmExecutionImpl implements Serializable, Act
   }
 
   @Override
-  @SuppressWarnings({ "unchecked", "rawtypes" })
   protected VariableInstanceFactory<CoreVariableInstance> getVariableInstanceFactory() {
-    return (VariableInstanceFactory) new SimpleVariableInstanceFactory();
+    return VARIABLE_INSTANCE_FACTORY;
   }
 
   @Override

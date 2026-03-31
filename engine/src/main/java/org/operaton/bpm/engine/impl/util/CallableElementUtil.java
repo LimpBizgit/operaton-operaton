@@ -35,7 +35,7 @@ import static org.operaton.bpm.engine.impl.ProcessEngineLogger.UTIL_LOGGER;
  *
  */
 public final class CallableElementUtil {
-
+  private static final VariableScope START_PROCESS_VARIABLE_SCOPE = new StartProcessVariableScope();
   private CallableElementUtil() {
   }
 
@@ -62,7 +62,7 @@ public final class CallableElementUtil {
       return null;
     }
 
-    VariableScope emptyVariableScope = new StartProcessVariableScope();
+    VariableScope emptyVariableScope = START_PROCESS_VARIABLE_SCOPE;
 
     String targetTenantId = callableElement.getDefinitionTenantId(emptyVariableScope, tenantId);
 

@@ -97,6 +97,7 @@ public class TaskEntity extends AbstractVariableScope implements Task, DelegateT
   private static final VariableInstanceEntityPersistenceListener VARIABLE_INSTANCE_ENTITY_PERSISTENCE_LISTENER = new VariableInstanceEntityPersistenceListener();
   private static final VariableInstanceHistoryListener VARIABLE_INSTANCE_HISTORY_LISTENER = new VariableInstanceHistoryListener();
   private static final VariableInstanceSequenceCounterListener VARIABLE_INSTANCE_SEQUENCE_COUNTER_LISTENER = new VariableInstanceSequenceCounterListener();
+  private static final VariableInstanceFactory VARIABLE_INSTANCE_FACTORY = new VariableInstanceEntityFactory();
 
   protected static final List<VariableInstanceLifecycleListener<CoreVariableInstance>> DEFAULT_VARIABLE_LIFECYCLE_LISTENERS =
       Arrays.asList(
@@ -533,9 +534,8 @@ public class TaskEntity extends AbstractVariableScope implements Task, DelegateT
   }
 
   @Override
-  @SuppressWarnings({ "unchecked", "rawtypes" })
   protected VariableInstanceFactory<CoreVariableInstance> getVariableInstanceFactory() {
-    return (VariableInstanceFactory) new VariableInstanceEntityFactory();
+    return VARIABLE_INSTANCE_FACTORY;
   }
 
   @Override
