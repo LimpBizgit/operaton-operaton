@@ -29,12 +29,9 @@ import com.fasterxml.jackson.databind.JsonMappingException;
  */
 @Provider
 public class JsonMappingExceptionHandler implements ExceptionMapper<JsonMappingException> {
-  private final ExceptionHandlerHelper exceptionHandlerHelper = new ExceptionHandlerHelper();
-
   @Override
   public Response toResponse(JsonMappingException exception) {
-    InvalidRequestException badRequestException = new InvalidRequestException(Status.BAD_REQUEST,
-        exception, "");
-    return exceptionHandlerHelper.getResponse(badRequestException);
+    InvalidRequestException badRequestException = new InvalidRequestException(Status.BAD_REQUEST, exception, "");
+    return ExceptionHandlerHelper.getResponse(badRequestException);
   }
 }

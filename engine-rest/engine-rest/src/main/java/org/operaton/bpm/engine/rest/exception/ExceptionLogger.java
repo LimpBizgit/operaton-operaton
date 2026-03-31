@@ -36,10 +36,9 @@ public class ExceptionLogger extends BaseLogger {
       "HTTP"
   );
 
-  private final ExceptionHandlerHelper exceptionHandlerHelper = new ExceptionHandlerHelper();
 
   public void log(Throwable throwable) {
-    Response.Status status = exceptionHandlerHelper.getStatus(throwable);
+    Response.Status status = ExceptionHandlerHelper.getStatus(throwable);
     int statusCode = status.getStatusCode();
 
     if (statusCode < 500) {

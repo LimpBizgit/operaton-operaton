@@ -38,10 +38,8 @@ import org.operaton.bpm.engine.ProcessEngineException;
  */
 @Provider
 public class ProcessEngineExceptionHandler implements ExceptionMapper<ProcessEngineException> {
-  private final ExceptionHandlerHelper exceptionHandlerHelper = new ExceptionHandlerHelper();
-
   @Override
   public Response toResponse(ProcessEngineException exception) {
-    return exceptionHandlerHelper.getResponse(exception);
+    return ExceptionHandlerHelper.getResponse(exception);
   }
 }

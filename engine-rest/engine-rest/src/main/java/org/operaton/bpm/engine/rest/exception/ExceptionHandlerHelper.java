@@ -39,10 +39,10 @@ public final class ExceptionHandlerHelper {
 
   protected static final ExceptionLogger LOGGER = ExceptionLogger.REST_LOGGER;
 
-  public ExceptionHandlerHelper() {
+  private ExceptionHandlerHelper() {
   }
 
-  public Response getResponse(Throwable throwable) {
+  public static Response getResponse(Throwable throwable) {
     LOGGER.log(throwable);
 
     Response.Status responseStatus = getStatus(throwable);
@@ -55,7 +55,7 @@ public final class ExceptionHandlerHelper {
         .build();
   }
 
-  protected void provideExceptionCode(Throwable throwable, ExceptionDto exceptionDto) {
+  protected static void provideExceptionCode(Throwable throwable, ExceptionDto exceptionDto) {
     Integer code = null;
     if (throwable instanceof ProcessEngineException) {
       code = getCode(throwable);
@@ -73,12 +73,12 @@ public final class ExceptionHandlerHelper {
     }
   }
 
-  protected Integer getCode(Throwable throwable) {
+  protected static Integer getCode(Throwable throwable) {
     ProcessEngineException pex = (ProcessEngineException) throwable;
     return pex.getCode();
   }
 
-  public ExceptionDto fromException(Throwable e) {
+  public static ExceptionDto fromException(Throwable e) {
     ExceptionDto exceptionDto;
     if (e instanceof MigratingProcessInstanceValidationException exception) {
       exceptionDto = MigratingProcessInstanceValidationExceptionDto.from(exception);
@@ -96,7 +96,7 @@ public final class ExceptionHandlerHelper {
     return exceptionDto;
   }
 
-  public Response.Status getStatus(Throwable exception) {
+  public static Response.Status getStatus(Throwable exception) {
     Response.Status responseStatus = Response.Status.INTERNAL_SERVER_ERROR;
 
     if (exception instanceof ProcessEngineException engineException) {
@@ -111,7 +111,7 @@ public final class ExceptionHandlerHelper {
     return responseStatus;
   }
 
-  public Response.Status getStatus(ProcessEngineException exception) {
+  public static Response.Status getStatus(ProcessEngineException exception) {
     Response.Status responseStatus = Response.Status.INTERNAL_SERVER_ERROR;
 
     // provide custom handling of authorization exception
@@ -126,7 +126,7 @@ public final class ExceptionHandlerHelper {
     return responseStatus;
   }
 
-  public Response.Status getStatus(RestException exception) {
+  public static Response.Status getStatus(RestException exception) {
     if (exception.getStatus() != null) {
       return exception.getStatus();
     }
