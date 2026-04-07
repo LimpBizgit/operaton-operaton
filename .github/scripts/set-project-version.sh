@@ -68,8 +68,8 @@ PACKAGE_LOCK_FILES=($(find . -name package-lock.json -not -path "*/node_modules/
 
 for PACKAGE_LOCK_FILE in "${PACKAGE_LOCK_FILES[@]}"; do
   PACKAGE_LOCK_DIR=$(dirname "$PACKAGE_LOCK_FILE")
-  echo "  Running npm install --package-lock-only in $PACKAGE_LOCK_DIR"
-  (cd "$PACKAGE_LOCK_DIR" && npm install --package-lock-only)
+  echo "  Running npm install --package-lock-only --ignore-scripts in $PACKAGE_LOCK_DIR"
+  (cd "$PACKAGE_LOCK_DIR" && npm install --package-lock-only --ignore-scripts)
 done
 
 echo "🔄 Updating version in pom.xml files that are not part of the reactor"
