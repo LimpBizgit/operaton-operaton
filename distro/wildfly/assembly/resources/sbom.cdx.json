@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:f649eb56-3ec7-4dfd-b5fb-fcb44df356a7",
+  "serialNumber": "urn:uuid:a155f4bc-6637-46f7-bc31-d221a915bdc5",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-04-07T03:32:44Z",
+    "timestamp": "2026-04-07T04:52:40Z",
     "tools": {
       "components": [
         {
@@ -31354,7 +31354,7 @@
     },
     {
       "type": "application",
-      "bom-ref": "0697f0f6-d6cd-4027-9059-8dbc58acb078",
+      "bom-ref": "9ae91b6b-0ac6-45c7-9537-0b77aa6e745c",
       "name": "package-lock.json",
       "properties": [
         {
@@ -34292,9 +34292,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:npm/fast-xml-parser@5.5.9",
+      "bom-ref": "pkg:npm/fast-xml-parser@5.5.10",
       "name": "fast-xml-parser",
-      "version": "5.5.9",
+      "version": "5.5.10",
       "licenses": [
         {
           "license": {
@@ -34302,11 +34302,11 @@
           }
         }
       ],
-      "purl": "pkg:npm/fast-xml-parser@5.5.9",
+      "purl": "pkg:npm/fast-xml-parser@5.5.10",
       "properties": [
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "fast-xml-parser@5.5.9"
+          "value": "fast-xml-parser@5.5.10"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -35579,9 +35579,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:npm/path-expression-matcher@1.2.0",
+      "bom-ref": "pkg:npm/path-expression-matcher@1.2.1",
       "name": "path-expression-matcher",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "licenses": [
         {
           "license": {
@@ -35589,11 +35589,11 @@
           }
         }
       ],
-      "purl": "pkg:npm/path-expression-matcher@1.2.0",
+      "purl": "pkg:npm/path-expression-matcher@1.2.1",
       "properties": [
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "path-expression-matcher@1.2.0"
+          "value": "path-expression-matcher@1.2.1"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -36364,7 +36364,7 @@
     },
     {
       "type": "application",
-      "bom-ref": "7f4117fc-f8f1-4c6f-93b5-d4d5476cc46e",
+      "bom-ref": "80a45db3-e4dc-46de-b454-3df79b891d8b",
       "name": "/repo/webapps/frontend",
       "properties": [
         {
@@ -40071,7 +40071,13 @@
       "dependsOn": []
     },
     {
-      "ref": "0697f0f6-d6cd-4027-9059-8dbc58acb078",
+      "ref": "80a45db3-e4dc-46de-b454-3df79b891d8b",
+      "dependsOn": [
+        "9ae91b6b-0ac6-45c7-9537-0b77aa6e745c"
+      ]
+    },
+    {
+      "ref": "9ae91b6b-0ac6-45c7-9537-0b77aa6e745c",
       "dependsOn": [
         "pkg:npm/%40bpmn-io/dmn-migrate@0.7.1",
         "pkg:npm/%40bpmn-io/form-js@1.21.2",
@@ -40107,7 +40113,7 @@
         "pkg:npm/dom4@2.1.6",
         "pkg:npm/dompurify@3.3.3",
         "pkg:npm/events@3.3.0",
-        "pkg:npm/fast-xml-parser@5.5.9",
+        "pkg:npm/fast-xml-parser@5.5.10",
         "pkg:npm/jquery-ui@1.14.2",
         "pkg:npm/jquery@3.7.1",
         "pkg:npm/lodash@4.18.1",
@@ -40118,12 +40124,6 @@
         "pkg:npm/requirejs-angular-define@1.1.0",
         "pkg:npm/requirejs@2.3.8",
         "pkg:npm/superagent@10.3.0"
-      ]
-    },
-    {
-      "ref": "7f4117fc-f8f1-4c6f-93b5-d4d5476cc46e",
-      "dependsOn": [
-        "0697f0f6-d6cd-4027-9059-8dbc58acb078"
       ]
     },
     {
@@ -40960,14 +40960,14 @@
     {
       "ref": "pkg:npm/fast-xml-builder@1.1.4",
       "dependsOn": [
-        "pkg:npm/path-expression-matcher@1.2.0"
+        "pkg:npm/path-expression-matcher@1.2.1"
       ]
     },
     {
-      "ref": "pkg:npm/fast-xml-parser@5.5.9",
+      "ref": "pkg:npm/fast-xml-parser@5.5.10",
       "dependsOn": [
         "pkg:npm/fast-xml-builder@1.1.4",
-        "pkg:npm/path-expression-matcher@1.2.0",
+        "pkg:npm/path-expression-matcher@1.2.1",
         "pkg:npm/strnum@2.2.2"
       ]
     },
@@ -41267,7 +41267,7 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:npm/path-expression-matcher@1.2.0",
+      "ref": "pkg:npm/path-expression-matcher@1.2.1",
       "dependsOn": []
     },
     {
